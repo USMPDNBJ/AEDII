@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title></title>
+</head>
+<body>
+	<h1>LISTA</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>CODIGO</th>
+				<th>NOMBRE</th>
+				<th>APELLIDO</th>
+				<th>DNI</th>
+				<th>TELEFONO</th>
+				<th>NUMERO DE HABITACION</th>
+				<th>DIA</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<tr th:each="cli : ${listC}">
+				<td th:text="${cli.cod}"></td>
+				<td th:text="${cli.nom}"></td>
+				<td th:text="${cli.ape}"></td>
+				<td th:text="${cli.dni}"></td>
+				<td th:text="${cli.tel}"></td>
+				<td th:text="${cli.numH}"></td>
+				<td th:text="${cli.dia}"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
