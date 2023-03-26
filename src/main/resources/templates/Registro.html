@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" th:href="@{/css/style.css}"></link>
+<link rel="shortcut icon" href="images/LOGO.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<title>Login</title>
+</head>
+<body style="background:url('https://fondosmil.com/fondo/27742.jpg'); background-size: 100%">
+				
+		 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed;z-index: 2;width: 100%; font-size: 25px; background:url('Images/Fondo1.jpg')">
+		  <img src="images/LOGO.png" alt="" width="70px" class="logo">
+		  <button class="navbar-toggler" type="button" data-tog	gle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  		
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto"> 
+		      <li class="nav-item active" style="margin-left: 50px;">
+		        <a class="nav-link" href="/">INICIO </a>
+		      </li>
+		      <li class="nav-item active" style="margin-left: 50px;">
+		        <a class="nav-link" href="#">NOSOTROS</a>
+		      </li>
+		        <li class="nav-item active" style="margin-left: 50px;">
+		        <a class="nav-link" href="#">TIENDA</a>
+		      </li>	
+		   </ul>		
+<!--BOTON DE INICIAR SESIÓN-->		   
+		   <a href="/Login1">
+		   	<button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="margin-left: 50px;">INICIAR SESION</button>				   	
+		   </a>		      
+		 </div>
+		</nav>
+						
+<!--REGISTRO*************************************************************************************************************************-->	
+		 <div class="container rounded shadow" style="width: 30%;">
+        	<div class="row align-items-stretch">
+        		<div class="col bg-white p-1 rounded-end form-group" style="border-radius: 50px;margin-top: 110px">                         
+                <h2 class="fw-bold text-center py-5" >Registro</h2>
+                <form th:action="@{/RegistroP}" th:object="${cliente}" method="post">
+                     <div class="mb-4">
+                        <label  class="form-label" style="margin-left: 20px">Nombre</label>
+                        <input type="text" class="form-control" th:name="nom"  style="margin-left: 20px;width: 80%">
+                    </div>
+                    <div class="mb-4">
+                        <label  class="form-label" style="margin-left: 20px">Apellido</label>
+                        <input type="text" class="form-control" name="ape"  style="margin-left: 20px;width: 80%">
+                    </div>
+                    <div class="mb-4">
+                        <label  class="form-label" style="margin-left: 20px">DNI</label>
+                        <input type="text" class="form-control" name="dni"style="margin-left: 20px;width: 80%">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" style="margin-left: 20px">Correo Electrónico</label>
+                        <input type="email" class="form-control" name="cor" placeholder="example@hotmail.com" style="margin-left: 20px;width: 80%">
+                    </div>
+                    <div class="mb-4">
+                        <label  class="form-label"style="margin-left: 20px" >Contraseña</label>
+                        <input type="password" class="form-control" name="con" placeholder="**************" style="margin-left: 20px;width: 80%">
+                    </div>
+                    <div class="mb-4">
+                        <label  class="form-label" style="margin-left: 20px">Telefono</label>
+                        <input type="text" class="form-control" name="tel"  style="margin-left: 20px;width: 80%">
+                    </div>
+					<div class="mb-4">
+                        <label  class="form-label" style="margin-left: 20px">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" name="fec" style="margin-left: 20px;width: 80%">
+                    </div>                                                                                                  
+                    <div style="padding-top: 50px;margin-bottom: 50px">                      	
+                       <button type="submit" class="btn btn-outline-dark d-block mx-auto" >REGISTRARSE</button>                       
+                    </div>       
+                </form>                   
+		 </div>
+
+
+            </div>
+            </div>  
+<!--********************************************************************************************************************************************************************************************************************************************************************************-->
+<!-- FOOTER   -->
+      <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="Images/LOGO.png" alt="Logo de leaf" style="margin-left: 350px">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                    <p>Somos una empresa que busca la excelencia en el servicio de alojamiento turístico<p>
+                    <p>Nuestra meta es llegar a hospedar más de 5000 personas en nuestro primer año.</p>
+            </div>
+
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>                    
+</body>
+</html>

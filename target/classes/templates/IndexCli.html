@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<link rel="shortcut icon" href="images/LOGO.png">
+<link rel="stylesheet" th:href="@{/css/style.css}"></link>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<title	>KALLANKA Hotels</title>
+</head>
+<body style="background-color:  #E6B876">
+<header>
+<!-- BARRA DE NAVEGACION*************************************************************************************************************************************************************************************************************************************************************************************************************************************** -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position:fixed;z-index: 2;width: 100%; font-size: 25px; background:url('Images/Fondo1.jpg'); ">
+		  <img src="images/LOGO.png" alt="" width="70px" class="logo">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto"> 
+		      <li class="nav-item active" style="margin-left: 50px;">
+		        <a class="nav-link" href="/">INICIO </a>
+		      </li>
+		      <li class="nav-item active" style="margin-left: 50px;">
+		        <a class="nav-link" href="#">NOSOTROS</a>
+		      </li>
+		        <li class="nav-item active" style="margin-left: 50px;">
+		        <a class="nav-link" href="#">TIENDA</a>
+		      </li>
+		       <li class="nav-item active" style="margin-left: 50px;">
+		        <a class="nav-link" href="#">MI INFO</a>
+		      </li>
+		       <li class="nav-item active" style="margin-left: 50px;">
+		        <a class="nav-link" href="#">SALDO</a>
+		      </li>
+		   </ul>		
+<!--BOTON DE INICIAR SESIÓN-->		   
+		   <a href="/">
+		   	<button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="margin-left: 50px;">CERRAR SESION</button>				   	
+		   </a>		      
+		 </div>
+		</nav>
+<!--********************************************************************************************************************************************************************************************************************************************************************************-->    
+<!-- VIDEO BACKGROUND-->
+		<a href="https://api.whatsapp.com/message/WCD7TTSG5MNNO1?autoload=1&app_absent=0" class="btn-wtsp" target="_blank">
+        <i class="icon-watsapp"></i>
+      </a>
+		
+		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+		          <source src="/Videos/amanecer-84152.mp4" type="video/mp4">
+		        </video>		
+		           
+<!-- ESCRITURA Y IMAGEN EN VIDEO BACKGROUND-->
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center ">
+          <div class="container-fluid">  
+            <img src="/Images/LETRAS.png" alt="" width="500px" style="position:relative;right: 23em;margin-top: 200px">
+            <p style="color: #ccc;position:relative;right: 370px;font-size: 30px; margin-right: -50px;">Somos una empresa enfocada en la excelencia de poder brindar el más cómodo alojamiento turístico</p>
+          </div>
+        </div>
+      </div>
+</header>
+
+  <div><h1 style="font-size: 70px;text-align: center; color: black">PROXIMOS EVENTOS KALLANKA </h1></div>
+<!--********************************************************************************************************************************************************************************************************************************************************************************-->
+<!-- SLIDER O CAROUSEL -->
+<div style="background: black">
+	<div class="mx-auto" >  
+
+<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel" style="width: 100%;right: 0px;">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="5000">
+      <img src="images/Catedral.jpg" class="d-block w-100" alt="..."  height="600px" width="100%">
+    </div>
+    <div class="carousel-item" data-interval="5000">
+      <img src="images/Machu.jpg" class="d-block w-100" alt="..." height="600px" width="100%">
+    </div>
+    <div class="carousel-item" data-interval="5000">
+      <img src="images/Montaña.jpg" class="d-block w-100" alt="..." height="600px" width="100%">
+    </div>
+  </div>	
+  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev" style="background-color: rgb(0, 0, 0);width: 13em;">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next" style="background-color: rgb(0, 0, 0);width: 13em;">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+  </div>
+</div>
+
+
+<!--SUSCRIPCIONES*********************************************************************************************************************************************************************************************-->                
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check</title>
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+</svg>
+<div class="container">
+  <div class="row,container text-center"><h1 style="font-size: 70px; color: black">SÉ PARTE DE NOSOTROS </h1></div>
+</div>
+<!-- STOCK   -->
+
+ <div class="mx-auto" style="background-color: #0a141d">
+      <div class="container text-center" style="color: rgb(255, 255, 255); font-size: 40px;">
+        <h1 class="display-4" style="font-family:'Courier New', Courier, monospace;">SUSCRIPCIONES</h1>
+        <p class="lead" style="font-family:'Courier New', Courier, monospace;"> Suscríbase para obtener grandes beneficios.
+        </p>        
+      </div>
+      <div class="container text-center" >
+        <!-- row: para envolverlo en una fila  
+             row-cols-1: para que sea responsive y acepte 1 columna
+             row-cols-md-3: para que acepte 3 columnas en la fila
+             col: para envolverlo en una columna
+             shadow-sm: para colocar sombra a la tarjeta de diferentes tamaños (-sm,-lg) -->    
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col mb-4">
+              <div class="card shadow-lg border-dark">
+                <div class="card-header py-3 text-white bg-dark border-dark">
+                        <h4 >BASICO</h4>
+                    </div>
+                    <div class="card-body">
+                          <!-- my-0: margin-top y margin-bottom en 0
+                               text-muted: para recrear el texto pequeño de encabezado secundario -->
+                        <h1 class="my-0 font-weight-normal">S/.2800
+                        <small class="text-muted">/1 mes</small></h1>
+                        <!-- list-unstyled: para tener una lista sin estilo
+                             mt-3: margin-top 3 -> 1rem
+                             mb-4: margin-bottom -> 1.5rem
+                             w-100: para que el botón se estire al tamaño completo de la fil -->
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>1 Excursión</li>
+                            <li>5% Descuento en las primeras 10 compras</li>
+                            <li>Soporte de correo</li>
+                            <li>Acceso al centro de ayuda</li>
+                        </ul>
+                        <button class="btn btn-outline-dark btn-lg w-100">Comprar </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card shadow-lg border-dark">
+                <div class="card-header py-3 text-white bg-dark border-dark">
+                        <h4>INTERMEDIO</h4>
+                    </div>
+                    <div class="card-body">
+                        <!-- my-0: margin-top y margin-bottom en 0
+                             text-muted: para recrear el texto pequeño de encabezado secundario -->
+                        <h1 class="my-0 font-weight-normal">S/.5600
+                        <small class="text-muted">/2 meses</small></h1>
+                        <!-- list-unstyled: para tener una lista sin estilo
+                             mt-3: margin-top 3 -> 1rem
+                             mb-4: margin-bottom -> 1.5rem -->
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>2 Excursiones</li>
+                            <li>5% Descuento en las primeras 20 compras</li>
+                            <li>Soporte de correo</li>
+                            <li>Acceso al centro de ayuda</li>
+                        </ul>
+                        <button class="btn btn-outline-dark btn-lg w-100">Comprar </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card shadow-lg border-dark">
+                    <div class="card-header py-3 text-white bg-dark border-dark">
+                        <h4>AVANZADO</h4>
+                    </div>
+                    <div class="card-body">
+                        <!-- my-0: margin-top y margin-bottom en 0
+                             text-muted: para recrear el texto pequeño de encabezado secundario
+                        -->
+                        <h1 class="my-0 font-weight-normal">S/.8000
+                        <small class="text-muted">/3 meses</small></h1>
+                        <!-- list-unstyled: para tener una lista sin estilo
+                             mt-3: margin-top 3 -> 1rem
+                             mb-4: margin-bottom -> 1.5rem -->
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>3 Excursiones</li>
+                            <li>10% Descuento en las primeras 40 compras</li>
+                            <li>Soporte de correo</li>
+                            <li>Acceso al centro de ayuda</li>
+                        </ul>
+                        <button class="btn btn-outline-dark btn-lg w-100">Comprar </button>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+      </div>
+
+      <div class="container text-center" style="color: rgb(255, 255, 255)">
+    
+        <h1 class="display-4" style="font-family:'Courier New', Courier, monospace;">COMPARAR PLANES</h1>
+  
+        <div class="table-responsive" >
+          <table class="table text-center" style="color: rgb(255, 255, 255)">
+            <thead>
+              <tr>
+                <th style="width: 34%;"></th>
+                <th style="width: 22%;">Gratis</th>
+                <th style="width: 22%;">Pro</th>
+                <th style="width: 22%;">Negocios</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Público</th>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Privado</th>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+            </tbody>
+  
+            <tbody>
+              <tr>
+                <th scope="row" class="text-start">Permisos</th>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Compartir</th>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Miembros ilimitados</th>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Seguridad extra</th>
+                <td></td>
+                <td></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>  
+  </div>      
+ 
+
+<!--********************************************************************************************************************************************************************************************************************************************************************************-->
+<!-- FOOTER   -->
+      <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="Images/LOGO.png" alt="Logo de leaf" style="margin-left: 350px">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                    <p>Somos una empresa que busca la excelencia en el servicio de alojamiento turístico<p>
+                    <p>Nuestra meta es llegar a hospedar más de 5000 personas en nuestro primer año.</p>
+            </div>
+
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>                      
+</body>
+</html>
